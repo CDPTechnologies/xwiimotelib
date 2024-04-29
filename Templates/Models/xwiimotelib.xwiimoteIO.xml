@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="xwiimotelib.xwiimoteIO">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Attributes>
+  <Attribute SaveOnChange="0" Description="Implementation model used." ReadOnly="1" Name="Model" Type="string" Required="1" Value="xwiimotelib.xwiimoteIO"></Attribute>
+    <Attribute Name="Description" Value="Communication I/O server for Nintendo Wii / Wii U remotes (for Linux OS)"></Attribute>
+    <Attribute Description="Can be device number or a full path of the wii device" Name="Device" Value="1"></Attribute>
+ </Attributes>
+ <Element DisplayHint="Important" Unit="Hz" Description="The Frequency [Hz] that the component statemachine is run at." Model="PropertyAsElement" Name="fs" Type="double" Required="1" Value="1"></Element>
+ <Element DisplayHint="Important" Selection="normal;high;low" Description="Override default model priority to instance specific level." Model="PropertyAsElement" Name="Priority" TypeHint="Selection" Value="normal"></Element>
+ <Signals>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Home" Type="bool" Input="0" Description="Wii Home button state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="A" Type="bool" Input="0" Description="Wii A button state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Left" Type="bool" Input="0" Description="Wii Arrow Left button state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Right" Type="bool" Input="0" Description="Wii Arrow Right button state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Up" Type="bool" Input="0" Description="Wii Arrow Up button state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Down" Type="bool" Input="0" Description="Wii Arrow Down button state"></Signal>
+  <Signal Name="One" Model="CDPSignal&lt;bool&gt;" Type="bool" Input="0" Description="Wii One (1) button state"></Signal>
+  <Signal Name="Two" Model="CDPSignal&lt;bool&gt;" Type="bool" Input="0" Description="Wii Two (2) button state"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="AccelX" Type="int" Input="0" Description="Wii acceleration sensor X offset"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="AccelY" Type="int" Input="0" Description="Wii acceleration sensor Y offset"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="AccelZ" Type="int" Input="0" Description="Wii acceleration sensor Z offset"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="NunchukC" Type="bool" Input="0" Description="Wii Nunchuk button C state"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="NunchukZ" Type="bool" Input="0" Description="Wii Nunchuk button Z state"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="NunchukJoyX" Type="int" Input="0" Description="Wii Nunchuk joystick X axis position"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="NunchukJoyY" Type="int" Input="0" Description="Wii Nunchuk joystick Y axis position"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="NunchukAccelX" Type="int" Input="0" Description="Wii Nunchuk acceleration sensor X offset"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="NunchukAccelY" Type="int" Input="0" Description="Wii Nunchuk acceleration sensor Y offset"></Signal>
+  <Signal Model="CDPSignal&lt;int&gt;" Name="NunchukAccelZ" Type="int" Input="0" Description="Wii Nunchuk acceleration sensor Z offset"></Signal>
+  <Signal Model="CDPSignal&lt;bool&gt;" Name="Rumble" Type="bool" Input="1" Description="Set Wii Rumble motor state on (1) or off (0)"></Signal>
+ </Signals>
+</Model>

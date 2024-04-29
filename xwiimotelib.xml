@@ -1,0 +1,5 @@
+<Library Name="xwiimotelib">
+ <Models>
+  <Model Name="xwiimotelib.xwiimoteIO"/>
+ </Models>
+</Library>
