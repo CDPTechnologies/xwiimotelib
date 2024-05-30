@@ -25,10 +25,10 @@ git clone --recursive https://github.com/CDPTechnologies/xwiimotelib.git
 
 Before you can use the Wii Remote make sure it is paired with the Linux box and the corresponding kernel driver is loaded.
 
-Optionally, you can install **xwiimote** binary (for example, in Debian systems using the command `sudo apt install xwiimote`). Then you can test the connection of the Wii remote by entering the command 
+Optionally, you can install **xwiishow** utility (for example, in Debian systems using the command `sudo apt install xwiimote`). Then you can test the connection of the Wii remote by entering the command 
 
 ```
-xwiimote list
+xwiishow list
 ```
 That command output should list the connected Wii remote(s). If the list is empty then there is a problem with the connection and therefore also this library is not able to detect the Wii remote.
 
